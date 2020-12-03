@@ -7,7 +7,7 @@
     width: 100%;
 }
 .logo{
-    display: inline;
+    display: $display-inline;
     img{        
     margin-left: $margin1x + 5px;
     padding: 10px 0;
@@ -15,13 +15,13 @@
 }
 .user{
     color: #797878;
-    display: inline-flex;
+    display: $display-inline-flex;
     float: right;
     margin: 22px 15px 0px 0px;
     .cart{
         position: relative;
         p{
-            display: inline;
+            display: $display-inline;
             font-size: $font-size14;
             margin: 0px 6px;
         }
@@ -48,7 +48,7 @@
     .user-name{
         margin-left: 30px;
         p{
-            display: inline;
+            display: $display-inline;
             font-size: $font-size14;
             margin: 0px 6px;
         }
@@ -90,7 +90,7 @@
 .navigation{
     @extend .header;
     .nav-items{
-        display: inline-flex;
+        display: $display-inline-flex;
         width: 70%;
         .nav-bar{            
             color: $dim-grey;
@@ -122,7 +122,7 @@
     .search-bar{
         border: 1px solid $light-grey;
         box-shadow: 0px 1px 1px $light-grey;
-        display: inline;
+        display: $display-inline;
         float: right;        
         margin-right: $margin1x + 5px;
         width: 25%;
@@ -191,7 +191,7 @@
     @extend .header;
     margin-top: 20px; 
     .sidebar-content{
-        display: inline;
+        display: $display-inline;
         float: left;
         margin: 0px 15px;
         width: 17%;
@@ -266,8 +266,11 @@
     .shop-head::after {
         width: 113px $important;
     }
-    .advertise .image img{
+    .advertise .image{
+        width: 85% $important;
+        img{
         margin-left: 9px $important;            
+         }
     }
     .sidebar-content{
         width: 16% $important; 
@@ -331,7 +334,7 @@
 
     // about product section starts
     .about-product{
-        display: inline;        
+        display: $display-inline;        
         float: left;
         width: 80%;
         .navigation-list{            
@@ -359,7 +362,7 @@
         .product-detail{
             width: 100%;
             .image-area{
-                display: inline;
+                display: $display-inline;
                 float: left;
                 margin: 5% 0 0 0;
                 width: 40%;
@@ -375,7 +378,7 @@
                 margin: 3% 0;
                 width: 60%;
                 h2{
-                    display: inline;
+                    display: $display-inline;
                     font-weight: 400;                    
                     span{
                         font-size: 12px;
@@ -424,7 +427,7 @@
         border-bottom: 2px solid $silver-grey; 
         margin: 10px 0;
         li{
-        display: inline-flex;
+        display: $display-inline-block;
         margin: 0 10% 0 4%;
         padding: 10px 0;
         position: relative;
@@ -462,12 +465,14 @@
             padding: 10px 0;
             li span.product-head{               
                 float: left;
+                font-size: $font-size13 + 1px;
                 margin-left: 20px;
                 padding: 8px 0;
                 width: 30%;
             }
             li span.product-desc{                
                 float: left;
+                font-size: $font-size13 + 1px;
                 padding: 8px 0;
                 width: 50%;
             }
