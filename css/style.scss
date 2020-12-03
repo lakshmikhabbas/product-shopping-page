@@ -1,4 +1,5 @@
 @import "mix.scss";
+@import "_variables.scss";
 
 // header section starts
 .header{
@@ -8,7 +9,7 @@
 .logo{
     display: inline;
     img{        
-    margin-left: 15px;
+    margin-left: $margin1x + 5px;
     padding: 10px 0;
     }
 }
@@ -97,7 +98,7 @@
             font-size: 31px;
         }
         .nav-list{            
-            margin-left: 15px;
+            margin-left: $margin1x + 5px;
             width: 100%;
             li{
                 float: left;
@@ -109,7 +110,7 @@
                 &.list-item::after{
                     background-color: $grey;
                     content: "";                    
-                    height: 15px;                    
+                    height: $margin1x + 5px;                    
                     left: 84px;
                     position: absolute;                    
                     top: 5px;
@@ -123,7 +124,7 @@
         box-shadow: 0px 1px 1px $light-grey;
         display: inline;
         float: right;        
-        margin-right: 15px;
+        margin-right: $margin1x + 5px;
         width: 25%;
         i{
             float: right;
@@ -174,7 +175,7 @@
     }
     .nav-bar{
         display: block $important;        
-        margin-left: 10px;
+        margin-left: $margin1x;
     }
     .nav-bar:hover + .nav-list li{
         cursor: pointer;
@@ -227,7 +228,7 @@
                 background-color: #a20300;
                 color: $white;
                 float: left;
-                text-align: center;                               
+                @extend %center;                               
                 padding-bottom: 40px;
                 width: 65%; 
                 p{
@@ -241,7 +242,7 @@
                 float: left; 
                 width: 65%;                
                 img{
-                    height: 150px;                    
+                    @extend %height150;                    
                     margin-left: 35px;
                     margin-top: -25px;
                     width: 90px;
