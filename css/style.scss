@@ -1,5 +1,4 @@
-@import "mix.scss";
-@import "_variables.scss";
+
 
 // header section starts
 .header{
@@ -199,6 +198,7 @@
             font-size: $font-size15;
             margin: 10px 0 20px 0;
             position: relative;
+            text-transform: uppercase;
             &::after{
                 background-color: $silver-grey;
                 content: "";                
@@ -426,7 +426,9 @@
     width: 80%;  
     .headings{
         border-bottom: 2px solid $silver-grey; 
+        font-weight: $weight500;
         margin: 10px 0;
+        text-transform: uppercase;
         li{
         display: $display-inline-block;
         margin: 0 10% 0 4%;
