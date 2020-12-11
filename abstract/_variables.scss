@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    font-family: roboto;
+    list-style: none;
+    margin: 0;
+    padding: 0;   
+    text-decoration: none;
+}
+
+// color values
+$blue: #0a55a6;
+$dim-grey: #636262;
+$dim-grey-1:#424242;
+$grey: #808080;
+$light-blue: #6b6bcf;
+$ligh-blue-1: #5285be;
+$light-blue-1: #483ddf;
+$light-grey: #dddcdc;
+$light-grey-1: #aaa9a9;
+$light-grey-2: #c9c7c7;
+$lighter-grey: #cfcece;
+$white-light: #ecf0f1;
+$orange: #e19000;
+$red: #a20300;
+$silver-grey: #bebdbd;
+$white: #ffffff;
+$cello:#34495e;
+$light-blue: #5bc0de;
+$dark-grey: #a7a5a5;
+$grey: #888888;
+$light: #f1eded;
+$orange: #ff9c00;
+$lighter-grey: #8d8c8c;
+$light-grey: #d6d5d5;
+$dark-orange: #d17905;
+$red: #f05b4f;
+$light-green: #59922b;
+$purple: #7b1fa2;
+$dark-red: #d70206;
+$blue: #3c61ac;
+
+//font size
+$font-size: 12px;
+$font-size14: 14px;
+$font-size15: 15px;
+$font-size13: 13px;
+$font-size18: 18px;
+
+//width
+$width100: 100%;
+
+//font-weight
+$weight500: 500;
+
+//important
+$important: !important;
+
+//align
+%center{
+    text-align: center;
+}
+
+//height
+%height150{
+    height: 150px;
+}
+//margin value
+$margin1x: 10px;
+
+// display
+$display-inline: inline;
+$display-inline-block: inline-block;
+$display-inline-flex: inline-flex;
